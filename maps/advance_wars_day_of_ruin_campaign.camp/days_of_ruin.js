@@ -45,6 +45,11 @@ var Constructor = function() { // scriptStart
             dialog11.queueAnimation(dialog12);
             // Dialog
         } // Victory End
+        if (team === 1) { // 0 Defeat
+            // Dialog
+            var dialog0 = GameAnimationFactory.createGameAnimationDialog(map, qsTr("Oh no... After all I've been through?"), "CO_WILL", GameEnums.COMood_Sad, "#ff0000"); dialog0.loadBackground(""); // 1 ScriptEventDialogItem
+            // Dialog
+        } // Defeat End
     }; // victory
     this.turnStart = function(turn, player, map) { // turnStart
     // precondition
